@@ -177,7 +177,7 @@ export default function ScrollImageSequence() {
   }, [frameIndex]); // Removed images/loaded dependencies to avoid re-binding loop
 
   return (
-    <div ref={ref} className="relative h-[400vh] md:h-[250vh] bg-black">
+    <div ref={ref} className="relative h-[375vh] md:h-[250vh] bg-black">
       <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
         <canvas ref={canvasRef} className="absolute inset-0 z-0" />
 
