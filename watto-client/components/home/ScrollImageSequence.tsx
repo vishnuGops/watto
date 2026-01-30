@@ -42,17 +42,17 @@ export default function ScrollImageSequence() {
   const mobileY1 = useTransform(
     scrollYProgress,
     [0.1, 0.225, 0.35],
-    [50, -100, -150],
+    [50, -100, -300],
   );
   const mobileY2 = useTransform(
     scrollYProgress,
     [0.375, 0.5, 0.625],
-    [50, -100, -150],
+    [50, -100, -300],
   );
   const mobileY3 = useTransform(
     scrollYProgress,
     [0.65, 0.775, 0.9],
-    [50, -100, -150],
+    [50, -100, -300],
   );
 
   useEffect(() => {
@@ -86,16 +86,19 @@ export default function ScrollImageSequence() {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    
+
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     const render = (index: number) => {
-      const safeIndex = Math.max(0, Math.min(Math.round(index), frameCount - 1));
-      
+      const safeIndex = Math.max(
+        0,
+        Math.min(Math.round(index), frameCount - 1),
+      );
+
       // Try to find the nearest loaded image if current one isn't loaded yet
       let img = imagesRef.current[safeIndex];
-      
+
       // Fallback: look backwards for a loaded frame
       if (!img) {
         for (let i = safeIndex - 1; i >= 0; i--) {
@@ -106,7 +109,7 @@ export default function ScrollImageSequence() {
         }
       }
 
-      // If still no image (and we have future images?), look forward? 
+      // If still no image (and we have future images?), look forward?
       // Usually backward is safer for continuity, but let's just stick to what we have.
       // If absolutely nothing is loaded (img is null), we can't draw.
 
@@ -154,12 +157,12 @@ export default function ScrollImageSequence() {
     // But adding 'loadProgress' to dependency array might be too heavy?
     // Let's just rely on the fact that if the user scrolls, it will update.
     // But for the initial frame (0), we want it to appear ASAP.
-    
+
     const initialRenderInterval = setInterval(() => {
-        if (imagesRef.current[0]) {
-            render(frameIndex.get());
-            clearInterval(initialRenderInterval);
-        }
+      if (imagesRef.current[0]) {
+        render(frameIndex.get());
+        clearInterval(initialRenderInterval);
+      }
     }, 100);
 
     // Handle resize
@@ -183,10 +186,10 @@ export default function ScrollImageSequence() {
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white/50 bg-black z-20">
             <div className="mb-2">Loading Experience... {loadProgress}%</div>
             <div className="w-48 h-1 bg-gray-800 rounded overflow-hidden">
-                <div 
-                    className="h-full bg-blue-500 transition-all duration-300 ease-out"
-                    style={{ width: `${loadProgress}%` }}
-                />
+              <div
+                className="h-full bg-blue-500 transition-all duration-300 ease-out"
+                style={{ width: `${loadProgress}%` }}
+              />
             </div>
           </div>
         )}
