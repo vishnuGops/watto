@@ -6,7 +6,7 @@ export default function Footer() {
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-6 md:mb-0 text-center md:text-left">
-          <a className="text-3xl font-black tracking-tight text-white font-[family-name:var(--font-comfortaa)]">
+          <a className="text-3xl font-black tracking-tight text-white font-[family-name:var(--font-fredoka)]">
             watto
           </a>
           <p className="text-gray-500 mt-2">Hydration meets Innovation.</p>

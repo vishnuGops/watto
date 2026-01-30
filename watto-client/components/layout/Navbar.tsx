@@ -27,7 +27,7 @@ export default function Navbar() {
       >
         <Link
           href="/"
-          className="text-xl md:text-3xl font-black tracking-tight text-white font-[family-name:var(--font-comfortaa)]"
+          className="text-xl md:text-3xl font-black tracking-tight text-white font-[family-name:var(--font-fredoka)]"
         >
           watto
         </Link>

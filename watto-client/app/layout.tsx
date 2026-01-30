@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Comfortaa, Bungee, Anta } from "next/font/google";
+import { Fredoka, Oswald, Anta } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import "./globals.css";
 
-const bungee = Bungee({
-  variable: "--font-bungee",
+const oswald = Oswald({
+  variable: "--font-oswald",
   subsets: ["latin"],
   weight: "400",
 });
@@ -17,8 +17,8 @@ const anta = Anta({
   weight: "400",
 });
 
-const comfortaa = Comfortaa({
-  variable: "--font-comfortaa",
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bungee.variable} ${anta.variable} ${comfortaa.variable} antialiased bg-black text-white`}
+        className={`${oswald.variable} ${anta.variable} ${fredoka.variable} antialiased bg-black text-white`}
       >
         <SmoothScrolling>
           <Navbar />
