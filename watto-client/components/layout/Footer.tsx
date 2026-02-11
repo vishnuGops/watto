@@ -7,13 +7,14 @@ export default function Footer() {
       {/* Marquee Banner */}
       <div className="w-full overflow-hidden bg-transparent py-6 border border-black">
         <div className="animate-marquee whitespace-nowrap">
-          <span className="text-9xl font-black font-[family-name:var(--font-fredoka)] text-white/30 mx-4">
+          <span className="text-4xl font-black font-[family-name:var(--font-fredoka)] text-white/30 mx-4">
             watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧
             watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧
           </span>
-          {/* <span className="text-9xl font-black font-[family-name:var(--font-fredoka)] text-white/20 mx-4">
-            watto watto watto watto watto watto watto watto watto watto watto watto
-          </span> */}
+          <span className="text-4xl font-black font-[family-name:var(--font-fredoka)] text-white/30 mx-4">
+            watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧
+            watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧ watto ✧
+          </span>
         </div>
       </div>
 
