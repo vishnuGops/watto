@@ -5,7 +5,7 @@ import Counter from "../Counter";
 
 export default function LandingStatsInfo() {
   return (
-    <section className="bg-white text-black py-20 px-4 md:px-8">
+    <section className="bg-gray-200 text-black py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
         {/* Stat 1: Bottles Sold */}
         <div className="flex flex-col items-center justify-center space-y-4">
@@ -20,7 +20,7 @@ export default function LandingStatsInfo() {
             gap={3}
             textColor="black"
             fontWeight={900}
-            gradientFrom="white"
+            gradientFrom="gray-200"
             gradientTo="transparent"
           />
         </div>
@@ -38,7 +38,7 @@ export default function LandingStatsInfo() {
             gap={3}
             textColor="black"
             fontWeight={900}
-            gradientFrom="white"
+            gradientFrom="gray-200"
             gradientTo="transparent"
           />
         </div>
@@ -56,7 +56,7 @@ export default function LandingStatsInfo() {
             gap={3}
             textColor="black"
             fontWeight={900}
-            gradientFrom="white"
+            gradientFrom="gray-200"
             gradientTo="transparent"
           />
         </div>
@@ -74,7 +74,7 @@ export default function LandingStatsInfo() {
             gap={3}
             textColor="black"
             fontWeight={900}
-            gradientFrom="white"
+            gradientFrom="gray-200"
             gradientTo="transparent"
           />
         </div>

@@ -31,25 +31,24 @@ export default function ScrollImageSequence() {
   const desktopY1 = useTransform(scrollYProgress, [0.1, 0.2], [50, 0]);
 
   // Text 2 (Right, Center)
-  const desktopOpacity2 = useTransform(scrollYProgress, [0.35, 0.45], [0, 1]);
-  const desktopY2 = useTransform(scrollYProgress, [0.35, 0.45], [50, 0]);
+  const desktopOpacity2 = useTransform(scrollYProgress, [0.25, 0.35], [0, 1]);
+  const desktopY2 = useTransform(scrollYProgress, [0.25, 0.35], [50, 0]);
 
   // Text 3 (Left, Bottom)
-  const desktopOpacity3 = useTransform(scrollYProgress, [0.65, 0.75], [0, 1]);
-  const desktopY3 = useTransform(scrollYProgress, [0.65, 0.75], [50, 0]);
-
+  const desktopOpacity3 = useTransform(scrollYProgress, [0.4, 0.5], [0, 1]);
+  const desktopY3 = useTransform(scrollYProgress, [0.4, 0.5], [50, 0]);
   // --- MOBILE ANIMATIONS ---
   // Text 1 (Top)
-  const mobileOpacity1 = useTransform(scrollYProgress, [0.1, 0.15], [0, 1]);
-  const mobileY1 = useTransform(scrollYProgress, [0.1, 0.15], [30, 0]);
+  const mobileOpacity1 = useTransform(scrollYProgress, [0.1, 0.2], [0, 1]);
+  const mobileY1 = useTransform(scrollYProgress, [0.1, 0.2], [30, 0]);
 
   // Text 2 (Center)
-  const mobileOpacity2 = useTransform(scrollYProgress, [0.35, 0.4], [0, 1]);
-  const mobileY2 = useTransform(scrollYProgress, [0.35, 0.4], [30, 0]);
+  const mobileOpacity2 = useTransform(scrollYProgress, [0.25, 0.35], [0, 1]);
+  const mobileY2 = useTransform(scrollYProgress, [0.25, 0.35], [30, 0]);
 
   // Text 3 (Bottom)
-  const mobileOpacity3 = useTransform(scrollYProgress, [0.65, 0.7], [0, 1]);
-  const mobileY3 = useTransform(scrollYProgress, [0.65, 0.7], [30, 0]);
+  const mobileOpacity3 = useTransform(scrollYProgress, [0.4, 0.5], [0, 1]);
+  const mobileY3 = useTransform(scrollYProgress, [0.4, 0.5], [30, 0]);
 
   const textStyle3D = {
     textShadow:
