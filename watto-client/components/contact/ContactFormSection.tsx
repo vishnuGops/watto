@@ -96,9 +96,10 @@ const SelectField = ({ label, options, name, error }: { label: string; options: 
       <select 
         id={name}
         name={name}
+        defaultValue=""
         className={`w-full bg-black/50 border rounded-lg px-4 py-3 text-white appearance-none focus:outline-none focus:ring-1 transition-all cursor-pointer ${error ? 'border-red-500 focus:border-red-500 focus:ring-red-500/50' : 'border-white/10 focus:border-blue-500 focus:ring-blue-500/50'}`}
       >
-        <option value="" disabled selected>Select an option</option>
+        <option value="" disabled>Select an option</option>
         {options.map((opt) => (
           <option key={opt} value={opt} className="bg-neutral-900">
             {opt}
