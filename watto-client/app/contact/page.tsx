@@ -1,9 +1,10 @@
 import ContactFormSection from "@/components/contact/ContactFormSection";
+import ContactDetails from "@/components/contact/ContactDetails";
 import LightRays from "@/components/LightRays";
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen pt-32 pb-16 px-6 bg-black text-white flex flex-col items-center relative overflow-hidden">
+    <main className="min-h-screen md:pt-32 pb-16 px-6 bg-black text-white flex flex-col items-center relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
         <LightRays
           raysOrigin="top-center"
@@ -31,6 +32,7 @@ export default function ContactPage() {
         </p>
 
         <ContactFormSection />
+        <ContactDetails />
 
         <div className="mt-16 text-center border-t border-white/10 pt-12">
           <p className="text-gray-500">Or email us directly at</p>
