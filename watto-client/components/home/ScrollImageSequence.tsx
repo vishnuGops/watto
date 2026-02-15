@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 
 const frameCount = 80;
 const frames = Array.from(
@@ -24,6 +25,13 @@ export default function ScrollImageSequence() {
 
   // Transform scroll progress to frame index
   const frameIndex = useTransform(scrollYProgress, [0, 1], [0, frameCount - 1]);
+
+  // Scroll Indicator Opacity
+  const scrollIndicatorOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.05],
+    [1, 0],
+  );
 
   // --- DESKTOP ANIMATIONS ---
   // Text 1 (Left, Top)
@@ -265,6 +273,17 @@ export default function ScrollImageSequence() {
             Hydration that <br />
             <span className="text-sky-500">Drives Impressions</span>
           </h2>
+        </motion.div>
+
+        {/* Scroll Indicator */}
+        <motion.div
+          style={{ opacity: scrollIndicatorOpacity }}
+          className="pointer-events-none absolute bottom-10 left-0 right-0 flex flex-col items-center justify-end z-20 text-white/80"
+        >
+          <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] mb-2 font-light">
+            Scroll to explore
+          </span>
+          <ChevronDown className="w-6 h-6 animate-bounce" />
         </motion.div>
       </div>
     </div>

@@ -21,11 +21,11 @@ const LandingInfoOne = () => {
           <div className="group flex flex-col items-center md:items-end gap-4 max-w-xs">
             <Tag className="w-8 h-8 text-black" />
             <h3 className="bg-sky-500 text-black rounded-full px-4 py-2 text-xl font-bold uppercase transition-transform duration-300 group-hover:scale-105 cursor-default">
-              Brand Blind Spot
+              Clutter-Free Space
             </h3>
             <p className="text-gray-100 leading-relaxed text-xl">
-              Once sold, the connection with your customer usually ends. Turn
-              that passive product into an active channel.
+              Unlike crowded ad spaces, co-branding ensures exclusive presence &
+              no competing brand.
             </p>
           </div>
 
@@ -33,11 +33,11 @@ const LandingInfoOne = () => {
           <div className="group flex flex-col items-center md:items-end gap-4 max-w-xs">
             <TrendingUp className="w-8 h-8 text-black" />
             <h3 className="bg-sky-500 text-black rounded-full px-4 py-2 text-xl font-bold uppercase transition-transform duration-300 group-hover:scale-105 cursor-default">
-              Chance to Upsell or Inform
+              Cost-Effective
             </h3>
             <p className="text-gray-100 leading-relaxed text-xl">
-              Deliver targeted campaigns, sustainability stories, or promotions
-              directly to the consumer&apos;s hand.
+              The cost of each bottle is shared between partner and the
+              advertiser.
             </p>
           </div>
 
@@ -45,11 +45,10 @@ const LandingInfoOne = () => {
           <div className="group flex flex-col items-center md:items-end gap-4 max-w-xs">
             <Calendar className="w-8 h-8 text-black" />
             <h3 className="bg-sky-500 text-black rounded-full px-4 py-2 text-xl font-bold uppercase transition-transform duration-300 group-hover:scale-105 cursor-default">
-              Extended Shelf Life
+              Positive Association
             </h3>
             <p className="text-gray-100 leading-relaxed text-xl">
-              Keep your brand relevant long after the initial purchase with
-              dynamic, updatable digital content.
+              Your brand is associated with hydration and a positive experience.
             </p>
           </div>
         </div>
@@ -77,11 +76,11 @@ const LandingInfoOne = () => {
           <div className="group flex flex-col items-center md:items-start gap-4 max-w-xs">
             <Hand className="w-8 h-8 text-black" />
             <h3 className="bg-sky-500 text-black rounded-full px-4 py-2 text-xl font-bold uppercase transition-transform duration-300 group-hover:scale-105 cursor-default">
-              Tangible Interaction
+              Captive Attention
             </h3>
             <p className="text-gray-100 leading-relaxed text-xl">
-              Physical products create a unique touchpoint. Bridge the gap
-              between the physical and digital worlds.
+              Bottles stay 15&ndash;30 mins in hand. Unmatched brand dwell time,
+              there&apos;s no skipping or scrolling past.
             </p>
           </div>
 
@@ -89,11 +88,11 @@ const LandingInfoOne = () => {
           <div className="group flex flex-col items-center md:items-start gap-4 max-w-xs">
             <QrCode className="w-8 h-8 text-black" />
             <h3 className="bg-sky-500 text-black rounded-full px-4 py-2 text-xl font-bold uppercase transition-transform duration-300 group-hover:scale-105 cursor-default">
-              No Data or Insights
+              Extended Shelf Life
             </h3>
             <p className="text-gray-100 leading-relaxed text-xl">
-              Traditional packaging is silent. Gain valuable analytics on how,
-              where, and when customers engage.
+              Consumers share, carry bottles or take home extending and creating
+              secondary impressions.
             </p>
           </div>
 
@@ -101,11 +100,11 @@ const LandingInfoOne = () => {
           <div className="group flex flex-col items-center md:items-start gap-4 max-w-xs">
             <Users className="w-8 h-8 text-black" />
             <h3 className="bg-sky-500 text-black rounded-full px-4 py-2 text-xl font-bold uppercase transition-transform duration-300 group-hover:scale-105 cursor-default">
-              No Competitive Advantage
+              Data Driven Insights
             </h3>
             <p className="text-gray-100 leading-relaxed text-xl">
-              Stand out on the shelf. Offer an experience that competitors with
-              standard packaging can&apos;t match.
+              QR codes and CTAs bridge the real world to digital journeys,
+              driving measurable engagement.
             </p>
           </div>
         </div>
