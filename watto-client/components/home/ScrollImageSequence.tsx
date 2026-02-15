@@ -29,8 +29,8 @@ export default function ScrollImageSequence() {
   // Scroll Indicator Opacity
   const scrollIndicatorOpacity = useTransform(
     scrollYProgress,
-    [0, 0.05],
-    [1, 0],
+    [0, 0.05, 1],
+    [1, 0, 0],
   );
 
   // --- DESKTOP ANIMATIONS ---
@@ -278,7 +278,7 @@ export default function ScrollImageSequence() {
         {/* Scroll Indicator */}
         <motion.div
           style={{ opacity: scrollIndicatorOpacity }}
-          className="pointer-events-none absolute bottom-10 left-0 right-0 flex flex-col items-center justify-end z-20 text-white/80"
+          className="pointer-events-none absolute bottom-20 left-0 right-0 flex flex-col items-center justify-end z-20 text-white/80 md:bottom-10"
         >
           <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] mb-2 font-light">
             Scroll to explore
