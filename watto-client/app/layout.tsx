@@ -3,6 +3,7 @@ import { Fredoka, Oswald, Anta } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SmoothScrolling from "@/components/SmoothScrolling";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const oswald = Oswald({
@@ -43,6 +44,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </SmoothScrolling>
+        <Analytics />
       </body>
     </html>
   );
