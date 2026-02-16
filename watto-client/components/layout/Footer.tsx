@@ -8,12 +8,12 @@ export default function Footer() {
       <div className="w-full overflow-hidden bg-transparent py-6 border border-black">
         <div className="animate-marquee whitespace-nowrap">
           <span className="md:text-4xl font-black font-[family-name:var(--font-unbounded)] text-white/70 mx-2">
-            ✧ WATER ADVERTISING THROUGH TAGETED OUTREACH ✧ WATER ADVERTISING
-            THROUGH TAGETED OUTREACH
+            ✧ WATER ADVERTISING THROUGH TARGETED OUTREACH ✧ WATER ADVERTISING
+            THROUGH TARGETED OUTREACH
           </span>
           <span className="md:text-4xl font-black font-[family-name:var(--font-unbounded)] text-white/70 mx-2">
-            ✧ WATER ADVERTISING THROUGH TAGETED OUTREACH ✧ WATER ADVERTISING
-            THROUGH TAGETED OUTREACH
+            ✧ WATER ADVERTISING THROUGH TARGETED OUTREACH ✧ WATER ADVERTISING
+            THROUGH TARGETED OUTREACH
           </span>
         </div>
       </div>
