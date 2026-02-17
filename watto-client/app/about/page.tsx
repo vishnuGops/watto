@@ -25,7 +25,7 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="relative flex items-center justify-center mb-12">
           <CircularText
-            text="WATTO*WATTO*WATTO*"
+            text="WATTO✧WATTO✧WATTO✧"
             spinDuration={20}
             onHover="speedUp"
             className="absolute w-[300px] h-[300px] justify-center items-center md:w-[400px] md:h-[400px]"
@@ -38,11 +38,12 @@ export default function AboutPage() {
           <p className="text-xl md:text-2xl text-gray-400 leading-relaxed font-normal mb-8">
             We transform everyday hydration into a powerful storytelling medium.
             By placing your brand on premium water bottles, we deliver
-            impressions that are held, carried, and experienced—not just seen.
+            impressions that are held, carried, and experienced by consumers—not
+            just seen.
           </p>
           <div className="bg-neutral-900/50 p-8 rounded-2xl border border-white/10 my-12">
             <p className="text-2xl md:text-3xl italic text-white">
-              &quot;Traditional ads are scrolled past. Watto is held in
+              &quot;Traditional ads are scrolled past. WATTO is held in
               hand.&quot;
             </p>
           </div>

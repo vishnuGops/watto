@@ -16,14 +16,14 @@ const LandingInfoOne = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-12 md:gap-8">
         {/* Left Column */}
-        <div className="space-y-12 text-center md:text-right flex flex-col items-center md:items-end">
+        <div className="space-y-12 text-center md:flex flex-col items-center md:items-end">
           {/* Feature 1 */}
           <div className="group flex flex-col items-center md:items-end gap-4 max-w-xs">
             <Tag className="w-8 h-8 text-black" />
             <h3 className="bg-sky-500 text-black rounded-full px-4 py-2 text-lg font-bold uppercase transition-transform duration-300 group-hover:scale-105 cursor-default">
               Clutter-Free Space
             </h3>
-            <p className="text-gray-100 leading-relaxed text-xl">
+            <p className="text-gray-100 leading-relaxed text-xl text-align-left">
               Unlike crowded ad spaces, co-branding ensures exclusive presence &
               no competing brand.
             </p>
@@ -71,7 +71,7 @@ const LandingInfoOne = () => {
         </div>
 
         {/* Right Column */}
-        <div className="space-y-12 text-center md:text-left flex flex-col items-center md:items-start">
+        <div className="space-y-12 text-center md:flex flex-col items-center md:items-start">
           {/* Feature 4 */}
           <div className="group flex flex-col items-center md:items-start gap-4 max-w-xs">
             <Hand className="w-8 h-8 text-black" />

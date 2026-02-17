@@ -10,13 +10,13 @@ const stepsData = [
   },
   {
     title: "Provide your brand assets",
-    description: "i.e ad creative, message or QR code",
+    description: "",
     icon: FileUp,
     bg: "bg-violet-100",
   },
   {
     title: "WATTO prints & delivers",
-    description: "co-branded water bottles",
+    description: "",
     icon: Truck,
     bg: "bg-emerald-100",
   },
@@ -28,7 +28,7 @@ const stepsData = [
   },
   {
     title: "Launch your first hyper-local campaign",
-    description: "in as little as 2–3 weeks",
+    description: "",
     icon: Rocket,
     bg: "bg-rose-100",
   },

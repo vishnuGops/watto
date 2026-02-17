@@ -6,15 +6,16 @@ export default function Footer() {
     >
       {/* Marquee Banner */}
       <div className="w-full overflow-hidden bg-transparent py-6 border border-black">
-        <div className="animate-marquee whitespace-nowrap">
-          <span className="md:text-4xl font-black font-[family-name:var(--font-unbounded)] text-white/70 mx-2">
-            ✧ WATER ADVERTISING THROUGH TARGETED OUTREACH ✧ WATER ADVERTISING
-            THROUGH TARGETED OUTREACH
-          </span>
-          <span className="md:text-4xl font-black font-[family-name:var(--font-unbounded)] text-white/70 mx-2">
-            ✧ WATER ADVERTISING THROUGH TARGETED OUTREACH ✧ WATER ADVERTISING
-            THROUGH TARGETED OUTREACH
-          </span>
+        <div className="animate-marquee whitespace-nowrap flex">
+          {[...Array(4)].map((_, i) => (
+            <span
+              key={i}
+              className="md:text-4xl font-black font-[family-name:var(--font-unbounded)] text-white/70 mx-2"
+            >
+              <span className="text-sky-500">✧</span> WATER ADVERTISING THROUGH
+              TARGETED OUTREACH
+            </span>
+          ))}
         </div>
       </div>
 
@@ -28,19 +29,19 @@ export default function Footer() {
           </div>
           <div className="flex gap-8">
             <a
-              href="mailto:hello@watto.com"
+              href="mailto:info@watto.in"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              hello@watto.com
+              info@watto.in
             </a>
             <a
-              href="#"
+              href="https://x.com/watto_official"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              Twitter
+              X (Twitter)
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/watto.official/"
               className="text-gray-400 hover:text-white transition-colors"
             >
               Instagram

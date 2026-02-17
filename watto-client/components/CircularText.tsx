@@ -70,7 +70,9 @@ const CircularText: React.FC<CircularTextProps> = ({
         {letters.map((letter, i) => (
           <span
             key={i}
-            className="absolute top-0 left-1/2 -translate-x-1/2 font-black text-gray-300 font-[family-name:var(--font-fredoka)]"
+            className={`absolute top-0 left-1/2 -translate-x-1/2 font-black font-[family-name:var(--font-fredoka)] ${
+              letter === "✧" ? "text-sky-500" : "text-gray-300"
+            }`}
             style={{
               height: "50%", // Radius
               transform: `rotate(${i * angle}deg)`,
